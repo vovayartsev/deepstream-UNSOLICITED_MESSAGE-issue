@@ -11,7 +11,7 @@ connectionEndpoints:
     name: uws
     options:
         # port for the websocket server
-        port: 6666
+        port: ${PORT}
 
 
 # SSL Configuration
