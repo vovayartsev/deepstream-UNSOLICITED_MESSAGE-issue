@@ -5,7 +5,9 @@ const Deepstream = require( 'deepstream.io' ),
 
 const redisUrl = url.parse(process.env.REDIS_URL);
 
-const server = new Deepstream({port: process.env.PORT || 6020});
+const server = new Deepstream('./conf/config.yml')
+
+server.set( 'port', process.env.PORT || 6020);
 
 server.set( 'cache', new RedisCacheConnector( {
   port: redisUrl.port,
