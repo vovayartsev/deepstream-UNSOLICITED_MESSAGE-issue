@@ -54,7 +54,7 @@ plugins:
   #
   cache:
     name: redis
-    options: ${REDISCLOUD_URL}?dropBufferSupport=true
+    options: ${REDISCLOUD_URL}
 
   storage:
     name: mongodb
