@@ -1,4 +1,5 @@
-userA:
-  password: "tsA+yfWGoEk9uEU/GX1JokkzteayLj6YFTwmraQrO7k=75KQ2Mzm"
+john:
+  password: "helloworld"
   data:
+    role: admin
     some-optional: "auth-data"

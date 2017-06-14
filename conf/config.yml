@@ -55,7 +55,10 @@ maxMessageSize: 1048576 # maximum allowed size of an individual message in bytes
 
 #Authentication
 auth:
-  type: none
+  type: file
+  options:
+    path: ./users.yml
+    hash: false
 
 # # reading users and passwords from a file
 #   type: file
